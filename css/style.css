@@ -286,9 +286,7 @@ body{
         display: block !important;
         margin-top: 0.5rem;
     }
-    .octopus-logo{
-        width: 50%;
-    }
+
 }
 @media (min-width: 992px) {
     .navbar .container{
@@ -320,5 +318,11 @@ body{
     }
     .nav-item:first-child{
         margin-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .octopus-logo{
+        width: 50%;
     }
 }
