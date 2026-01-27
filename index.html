@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-dark py-3 mb-2">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.png" class="octopus-logo" alt="octopus-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-white">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">
+                            Our Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-building me-2"></i> Establishing Companies</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group me-2"></i> Customer Relationship Management</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-magnifying-glass-chart me-2"></i> Marketing Consulting</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-shield-halved me-2"></i> Digital Insurance</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-users-gear me-2"></i> Human Capital Management</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-scale-balanced me-2"></i> Legal Service</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                  
+                </ul>
+                    <button class="contact-us-button ">
+                        <a href="">Contact Us</a>
+                    </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container position-relative">
+            <video id="hero-video" src="./assets/octopus-WEBSITE.mp4" autoplay muted loop class="w-100"></video>
+            <div class="voice-icon" id="voice-toggle">
+                <i class="fa-solid fa-volume-high" id="volume-on-icon" style="display: none;"></i>
+                <i class="fa-solid fa-volume-xmark" id="volume-off-icon"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="services-section">
+        <div class="container">
+            <h3 class="text-center">Providing Unlimited Services</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card px-4 py-3">
+                    <div class="service-icon mb-3">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4>CRM System</h4>
+                    <p>Human Capital Management </p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card px-4 py-3">
+                    <div class="service-icon mb-3">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4>Digital Insurance</h4>
+                    <p>Establishing Companies</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card px-4 py-3">
+                    <div class="service-icon mb-3">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4>Marketing Consulting</h4>
+                    <p>Legal Service</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-us-section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6">
+                    <div class="">
+                    <h4 >About Us</h4>
+                    <p class="pt-4 pb-3">By choosing the Octopus you can gain strength in stress tolerance by working with us. Providing you with all the services in one organization without the need for any other company makes your company a leader; your development is faster, you can compete with any other company working in your field, and it increases your adaptability to the changes in the labor market.</p>
+                    <button class="contact-us-button ">Read More</button>
+                </div>
+                </div>
+                <div class="col-md-5 bg-about-us d-flex justify-content-end align-items-center">
+                    <img src="./assets/about-us.png" class="w-100" alt="about-us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-service">
+        <div class="container">
+            <h3 class="text-center">our service</h3>
+            <div class="row">
+            <div class="col-md-6 mb-5">
+                <div class="service-card mx-auto text-center">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4 class="mt-3">Human Capital Management</h4>
+                </div>
+    
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="service-card mx-auto text-center">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <h4 class="mt-3">CRM Services</h4>
+                </div>
+    
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="service-card mx-auto text-center">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h4 class="mt-3">Marketing Consulting</h4>
+                </div>
+    
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="service-card mx-auto text-center">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h4 class="mt-3">Stablishing Start-Up Companies</h4>
+                </div>
+    
+            </div>
+            <div class="col-md-6 mb-5">
+                <div class="service-card mx-auto text-center">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h4 class="mt-3">Legal Service</h4>
+                </div>
+    
+            </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <section class="goals">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>Our Goal</h4>
+                    <p>We firmly believe that every individual can find a successful company that provides distinguished services with a solid organizational structure, and we apply this to our clients through innovative and effective methods and a work team that creates a path to success from failure.</p>
+               
+                </div>
+                <div class="col-md-4 d-flex justify-content-end align-items-center">
+                    <button class="contact-us-button bg-contact">Contact-us</button>
+                </div>
+            </div>
+            <img src="./assets/problem-result.png" class="w-100 mt-5" alt="problem-result">
+           
+        </div>
+
+    </section>
+
+
+    <footer class=" footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Who We are</h3>
+                    <p>About Us</p>
+                    <p>Call Us</p>
+                    <p>Blogs</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>What We Do</h3>
+                    <p>CRM System</p>
+                    <p>Digital Marketing</p>
+                    <p>Establishing start up companies</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Also We Do</h3>
+                    <p>Tameen Now For Octopus</p>
+                    <p>Human Capital Management</p>
+                    <p>Legal Service</p>
+                </div>
+                
+            </div>
+            <div class="social-media d-flex align-items-center py-4">
+                <i class="fa-brands fa-facebook me-3"></i>
+                <i class="fa-brands fa-twitter me-3"></i>
+                <i class="fa-brands fa-instagram me-3"></i>
+                <i class="fa-brands fa-linkedin me-3"></i>
+            </div>
+           
+        </div>
+        <div class="policy  py-2">
+            <p>© 2026 by Octopus Holds | All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+       
+    </script>
+</body>
+
+</html>
