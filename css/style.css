@@ -38,8 +38,15 @@ body{
     min-width: 200px;
     margin-top: 0.5rem;
 }
-.nav-item.dropdown:hover .dropdown-menu{
-    display: block;
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu{
+        display: block;
+    }
+}
+.nav-item.dropdown.show .dropdown-menu,
+.dropdown.show .dropdown-menu,
+.nav-item.dropdown .dropdown-menu.show{
+    display: block !important;
 }
 .nav-item.dropdown .dropdown-item{
     color: white;
@@ -61,41 +68,15 @@ body{
     border-color: #41198a;
     margin: 0.5rem 0;
 }
-.navbar-collapse{
-    display: flex !important;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-}
-.navbar-collapse .navbar-nav{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.navbar-collapse .contact-us{
-    margin-left: auto;
-}
-.nav-item{
-    margin-left: 2rem;
-}
-@media (max-width: 991.98px) {
-    .navbar-collapse .navbar-nav{
-        position: static !important;
-        transform: none !important;
-        margin: 0 !important;
-    }
-    .navbar-collapse{
-        flex-direction: column !important;
-        align-items: flex-start !important;
-    }
-    .navbar-collapse .contact-us{
-        margin-left: 0;
-        margin-top: 1rem;
-        width: 100%;
-    }
+
+
+.navbar-brand{
+    flex-shrink: 0;
 }
 .octopus-logo{
-    width: 10%;
+    width: auto;
+    max-width: 150px;
+    height: auto;
 }
 .contact-us-button{
     background-color: #41198a;
@@ -263,4 +244,81 @@ body{
     border: 1px solid #999;
     text-align: center;
     margin-top: 60px;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse .navbar-nav{
+        position: static !important;
+        transform: none !important;
+        margin: 0 !important;
+        width: 100%;
+    }
+    .navbar-collapse{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .nav-item{
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .nav-item .nav-link{
+        padding: 0.5rem 0;
+    }
+    .navbar-collapse .contact-us-button{
+        margin-left: 0;
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .nav-item.dropdown .dropdown-menu{
+        position: static !important;
+        float: none;
+        width: 90%;
+        margin-top: 0;
+        margin-left: 1rem;
+        background-color: rgba(65, 25, 138, 0.2);
+        border: none;
+        display: none !important;
+    }
+    .nav-item.dropdown.show .dropdown-menu,
+    .dropdown.show .dropdown-menu,
+    .nav-item.dropdown .dropdown-menu.show{
+        display: block !important;
+        margin-top: 0.5rem;
+    }
+    .octopus-logo{
+        width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar-brand{
+        margin-right: 2rem;
+        flex-shrink: 0;
+    }
+    .navbar-collapse{
+        display: flex !important;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-collapse .navbar-nav{
+        position: static;
+        transform: none;
+        display: flex;
+        margin: 0;
+    }
+    .navbar-collapse .contact-us-button{
+        margin-left: auto;
+    }
+    .nav-item{
+        margin-left: 2rem;
+    }
+    .nav-item:first-child{
+        margin-left: 0;
+    }
 }
