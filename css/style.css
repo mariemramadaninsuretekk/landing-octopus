@@ -159,7 +159,7 @@ a.contact-us-button:hover {
     justify-content: center;
 }
 .about-us-section{
-    margin-top: 120px;
+    margin: 170px 0px;
 }
 .about-us-section h4{
     color:  white;
@@ -252,6 +252,12 @@ a.contact-us-button:hover {
     font-weight: 400;
     color: #999;
     margin-bottom: 2px;
+}
+.footer p a {
+    transition: all 0.3s ease;
+}
+.footer p a:hover {
+    text-decoration: underline !important;
 }
 .social-media i:hover{
     color: black;
