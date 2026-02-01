@@ -151,20 +151,28 @@ body{
     margin-top: 120px;
 }
 .about-us-section h4{
-    color:  #A974BD;
+    color:  #41198a;
     font-size: 42px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 .bg-about-us{
-    background-color: #A974BD;
+    background-color: #41198a;
     border-radius: 8px;
-    padding: 20px;
+    padding: 15px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 
+}
+.bg-about-us p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+}
+.bg-about-us img{
+    width: 90%;
+    border-radius: 8px;
 }
 .service-card{
     background-color: #41198a;
@@ -223,6 +231,7 @@ body{
 }
 .footer{
     margin-top: 70px;
+    background-color: #41198a;
 }
 .footer h3{
     margin-bottom: 15px;
@@ -234,7 +243,7 @@ body{
     margin-bottom: 2px;
 }
 .social-media i:hover{
-    color: #41198a;
+    color: black;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -244,6 +253,9 @@ body{
     border: 1px solid #999;
     text-align: center;
     margin-top: 60px;
+}
+.policy p{
+    color: black;
 }
 
 /* human capital */
@@ -271,6 +283,46 @@ body{
 .human-section p {
     color: white !important;
 }
+.contact-us-section{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 80px 0;
+}
+.contact-us-section h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #41198a;
+}
+.contact-us-section p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+}
+.contact-us-section h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-us-section i{
+    font-size: 24px;
+}
+.bg-content{
+    background-color: #41198a;
+    border-radius: 8px;
+    height: 100%;
+}
+.text-content{
+    color: #41198a;
+}
+.our-team{
+    margin: 120px 0;
+}
+.our-team h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #41198a;
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse .navbar-nav{
         position: static !important;
@@ -348,5 +400,334 @@ body{
 @media (max-width: 767.98px) {
     .octopus-logo{
         width: 50%;
+    }
+}
+
+/* Professional Work Experience Section */
+.experience-section {
+    margin: 80px 0;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.experience-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* Testimonials */
+.testimonials-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.testimonial-card {
+    margin-bottom: 140px;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.3s ease;
+}
+
+.testimonial-card.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.testimonial-card:first-child {
+    margin-top: 0;
+}
+
+.testimonial-card:last-child {
+    margin-bottom: 0;
+}
+
+.testimonial-card {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.stars i {
+    color: white;
+    font-size: 18px;
+}
+
+.testimonial-text {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.testimonial-company {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.company-logo-purple {
+    background-color: #8224e3;
+}
+
+.company-logo-red {
+    background-color: #e32424;
+}
+
+.company-logo-blue {
+    background-color: #2451e3;
+}
+
+.company-logo-green {
+    background-color: #24e351;
+}
+.company-name {
+    color: #8224e3;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.testimonial-company .company-logo-red ~ .company-name {
+    color: #e32424;
+}
+.testimonial-company .company-logo-blue ~ .company-name {
+    color: #2451e3;
+}
+.testimonial-company .company-logo-green ~ .company-name {
+    color: #24e351;
+}
+
+/* Timeline */
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+    padding-top: 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 25px;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background: linear-gradient(to bottom, #8224e3, #e32424);
+    transform-origin: top;
+    z-index: 1;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: transparent;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.timeline-item:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.timeline-item:first-child .timeline-content {
+    padding-top: 0;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 26px;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+    z-index: 3;
+    border: 3px solid black;
+    transform: translateX(-25px);
+    opacity: 0;
+    scale: 0;
+}
+
+.timeline-item:first-child .timeline-marker {
+    top: 0;
+}
+
+.timeline-marker.visible {
+    opacity: 1;
+    scale: 1;
+}
+
+.timeline-marker-purple {
+    background-color: #8224e3;
+}
+
+.timeline-marker-red {
+    background-color: #e32424;
+}
+
+.timeline-marker-blue {
+    background-color: #2451e3;
+}
+
+.timeline-marker-green {
+    background-color: #24e351;
+}
+.timeline-content {
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+.job-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.job-dates {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.responsibilities-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.responsibilities-list {
+    list-style: none;
+    padding: 0;
+}
+
+.responsibilities-list li {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.responsibilities-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #8224e3;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.timeline-item[data-timeline="2"] .responsibilities-list li::before {
+    color: #e32424;
+}
+
+.timeline-item[data-timeline="3"] .responsibilities-list li::before {
+    color: #2451e3;
+}
+
+.timeline-item[data-timeline="4"] .responsibilities-list li::before {
+    color: #24e351;
+}
+.img-crm{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    justify-content: end;
+    margin:  auto;
+}
+.our-team-2 h2{
+    font-size: 30px !important;
+
+}
+.our-team-2 h5{
+    font-size: 18px;
+    font-weight: 400;
+    color: #999;
+    margin-bottom: 20px;
+}
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .timeline-container {
+        padding-left: 30px;
+    }
+
+    .timeline-container::before {
+        left: 15px;
+    }
+
+    .timeline-marker {
+        left: -50px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .experience-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .experience-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .timeline-content {
+        padding-left: 10px;
+    }
+
+    .job-title {
+        font-size: 20px;
     }
 }
