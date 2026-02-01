@@ -441,7 +441,7 @@ a.contact-us-button:hover {
 }
 
 .testimonial-card {
-    margin-bottom: 60px;
+    margin-bottom: 150px;
     opacity: 0;
     transform: translateX(-30px);
     transition: opacity 0.3s ease;
