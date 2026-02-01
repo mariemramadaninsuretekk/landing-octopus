@@ -430,7 +430,7 @@ body{
 }
 
 .testimonial-card {
-    margin-bottom: 140px;
+    margin-bottom: 60px;
     opacity: 0;
     transform: translateX(-30px);
     transition: opacity 0.3s ease;
@@ -675,10 +675,11 @@ body{
     color: #24e351;
 }
 .img-crm{
-    width: 30rem;
-    height: 30rem;
-    display: flex;
-    justify-content: end;
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     margin:  auto;
 }
 .our-team-2 h2{
@@ -721,6 +722,36 @@ body{
 
     .testimonial-card {
         padding: 20px;
+        margin-bottom: 30px;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+
+    .testimonials-container {
+        gap: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .testimonial-company {
+        margin-top: 15px;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    .stars i {
+        font-size: 16px;
     }
 
     .timeline-content {
@@ -729,5 +760,50 @@ body{
 
     .job-title {
         font-size: 20px;
+    }
+
+    .timeline-item {
+        margin-bottom: 40px;
+    }
+
+    .experience-section {
+        margin: 40px 0;
+        padding: 30px 0;
+    }
+
+    /* CRM Images Mobile Responsive */
+    .img-crm {
+        width: 100% !important;
+        max-width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .our-team-2 .col-md-6,
+    .our-team .col-md-6 {
+        margin-bottom: 30px;
+    }
+
+    .our-team-2 h2,
+    .our-team h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .our-team-2 ul,
+    .our-team ul {
+        padding-left: 20px;
+    }
+
+    .our-team-2 li,
+    .our-team li {
+        font-size: 14px;
+        margin-bottom: 15px !important;
+    }
+
+    .our-team-2 p,
+    .our-team p {
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 }
