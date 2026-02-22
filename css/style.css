@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --dark-color: #1c1329;
+    --light-color: #685DA4;
+}
 
 body{
     background-color: black;
@@ -75,7 +79,7 @@ body{
 }
 .octopus-logo{
     width: auto;
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
 }
 .contact-us-button{
@@ -134,7 +138,7 @@ a.contact-us-button:hover {
     margin: 70px 0;
 }
 .services-section h3{
-    color: #8224e3;
+    color: var(--light-color);
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -144,11 +148,7 @@ a.contact-us-button:hover {
     font-weight: 400;
     color: #999;
 }
-.services-section .service-card{
-    border: 1px solid #41198a;
-    border-radius: 8px;
 
-}
 .service-icon{
     border-radius: 50%;
     background-color: #41198a;
@@ -159,10 +159,10 @@ a.contact-us-button:hover {
     justify-content: center;
 }
 .about-us-section{
-    margin: 170px 0px;
+    margin: 170px 0px 70px 0px;
 }
 .about-us-section h4{
-    color:  white;
+    color:  var(--light-color);
     font-size: 42px;
     font-weight: 700;
 }
@@ -186,7 +186,8 @@ a.contact-us-button:hover {
     border-radius: 8px;
 }
 .service-card{
-    background-color: #41198a;
+    background-color: transparent;
+    border: 2px solid var(--light-color);
     border-radius: 8px;
     padding: 20px;
     display: flex;
@@ -195,6 +196,29 @@ a.contact-us-button:hover {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+.service-card:hover {
+    border-color: var(--light-color);
+    box-shadow: 
+        0 0 15px rgba(104, 93, 164, 0.6),
+        0 0 30px rgba(104, 93, 164, 0.4),
+        0 0 45px rgba(104, 93, 164, 0.3),
+        inset 0 0 15px rgba(104, 93, 164, 0.15);
+    transform: translateY(-5px);
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
 }
 .our-service{
     margin-top: 70px;
@@ -308,12 +332,13 @@ a.contact-us-button:hover {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #41198a;
+    color: var(--light-color);
 }
 .contact-us-section p{
     font-size: 14px;
     font-weight: 400;
     color: #999;
+    margin-bottom: 0px;
 }
 .contact-us-section h3{
     font-size: 18px;
@@ -337,7 +362,7 @@ a.contact-us-button:hover {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #41198a;
+    color: var(--light-color);
 }
 
 @media (max-width: 991.98px) {
@@ -512,15 +537,15 @@ a.contact-us-button:hover {
 }
 
 .company-logo-red {
-    background-color: #e32424;
+    background-color: #41198a;
 }
 
 .company-logo-blue {
-    background-color: #2451e3;
+    background-color: #34254b;
 }
 
 .company-logo-green {
-    background-color: #24e351;
+    background-color: #34254b;
 }
 .company-name {
     color: #8224e3;
@@ -529,13 +554,13 @@ a.contact-us-button:hover {
 }
 
 .testimonial-company .company-logo-red ~ .company-name {
-    color: #e32424;
+    color: #41198a;
 }
 .testimonial-company .company-logo-blue ~ .company-name {
-    color: #2451e3;
+    color: #3e2a5a;
 }
 .testimonial-company .company-logo-green ~ .company-name {
-    color: #24e351;
+    color: #3e2a5a;
 }
 
 /* Timeline */
@@ -551,7 +576,7 @@ a.contact-us-button:hover {
     top: 0;
     width: 2px;
     height: 0;
-    background: linear-gradient(to bottom, #8224e3, #e32424);
+    background: linear-gradient(to bottom, #8224e3, #1c1329);
     transform-origin: top;
     z-index: 1;
 }
@@ -622,15 +647,15 @@ a.contact-us-button:hover {
 }
 
 .timeline-marker-red {
-    background-color: #e32424;
+    background-color: #41198a;
 }
 
 .timeline-marker-blue {
-    background-color: #2451e3;
+    background-color: #34254b;
 }
 
 .timeline-marker-green {
-    background-color: #24e351;
+    background-color: #34254b;
 }
 .timeline-content {
     padding-left: 20px;
@@ -681,15 +706,15 @@ a.contact-us-button:hover {
 }
 
 .timeline-item[data-timeline="2"] .responsibilities-list li::before {
-    color: #e32424;
+    color: #41198a;
 }
 
 .timeline-item[data-timeline="3"] .responsibilities-list li::before {
-    color: #2451e3;
+    color: #34254b;
 }
 
 .timeline-item[data-timeline="4"] .responsibilities-list li::before {
-    color: #24e351;
+    color: #34254b;
 }
 .img-crm{
     width: 100%;
